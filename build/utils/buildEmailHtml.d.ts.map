@@ -1,1 +1,1 @@
-{"version":3,"file":"buildEmailHtml.d.ts","sourceRoot":"","sources":["../../src/utils/buildEmailHtml.ts"],"names":[],"mappings":"AAAA,OAAO,EAAuC,KAAK,YAAY,EAAE,MAAM,UAAU,CAAC;AAKlF,MAAM,CAAC,OAAO,UAAU,cAAc,CAAC,YAAY,EAAE,YAAY,GAAG,MAAM,CAgCzE"}
+{"version":3,"file":"buildEmailHtml.d.ts","sourceRoot":"","sources":["file:///home/michaelikoko/Desktop/Programming/workflow-blabber/src/utils/buildEmailHtml.ts"],"names":[],"mappings":"AAAA,OAAO,EAAuC,KAAK,YAAY,EAAE,MAAM,UAAU,CAAC;AAKlF,MAAM,CAAC,OAAO,UAAU,cAAc,CAAC,YAAY,EAAE,YAAY,GAAG,MAAM,CAgCzE"}

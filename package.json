@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "ts-node": "ts-node",
     "start": "tsx ./src/index.ts",
-    "build": "tsc && tsc-alias"
+    "build": "ncc build src/index.ts -o build --minify"
   },
   "author": "Michael Ikoko",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "@types/mjml": "^4.7.4",
     "@types/node": "^24.9.2",
     "@types/nodemailer": "^7.0.3",
+    "@vercel/ncc": "^0.38.4",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.20.6",
