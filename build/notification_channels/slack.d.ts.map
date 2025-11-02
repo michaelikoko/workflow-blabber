@@ -1,0 +1,1 @@
+{"version":3,"file":"slack.d.ts","sourceRoot":"","sources":["../../src/notification_channels/slack.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,KAAK,YAAY,EAAE,KAAK,WAAW,EAAwB,MAAM,UAAU,CAAC;AAIpG,wBAAsB,gBAAgB,CAAC,YAAY,EAAE,YAAY,EAAE,WAAW,EAAE,WAAW,GAAG,OAAO,CAAC,IAAI,CAAC,CAsC1G"}

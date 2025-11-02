@@ -1,0 +1,36 @@
+{
+  "name": "workflow-blabber",
+  "version": "1.0.0",
+  "description": "Github action for sending notification to multiple platforms",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "ts-node": "ts-node",
+    "start": "tsx ./src/index.ts",
+    "build": "tsc && tsc-alias"
+  },
+  "author": "Michael Ikoko",
+  "license": "ISC",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@types/mjml": "^4.7.4",
+    "@types/node": "^24.9.2",
+    "@types/nodemailer": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1",
+    "axios": "^1.13.1",
+    "mjml": "^4.16.1",
+    "nodemailer": "^7.0.10",
+    "zod": "^4.1.12"
+  }
+}

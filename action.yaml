@@ -1,0 +1,71 @@
+name: 'Workflow Blabber'
+description: 'All in one notification for your GitHub Workflows'
+author: 'Michael Ikoko'
+
+inputs:
+  # General inputs
+  channels:
+    description: 'Notification channels to use (e.g., email, slack)'
+    required: true
+  status:
+    description: 'Status of the workflow (success, failure, cancelled)'
+    required: true
+  custom_title:
+    description: 'Custom title for the notification'
+    required: false
+  custom_message:
+    description: 'Custom message to include in the notification'
+    required: false
+  fail_on_error:
+    description: 'Fail the action if notification sending fails'
+    required: false
+    default: 'false'
+
+  # Email notification specific inputs
+  smtp_host:
+    description: 'SMTP server host for sending email notifications'
+    required: false
+  recipient_email:
+    description: 'Recipient email address for email notifications'
+    required: false
+  smtp_port:
+    description: 'SMTP server port'
+    required: false
+    default: '587'
+  smtp_user:
+    description: 'SMTP server username'
+    required: false
+  smtp_password:
+    description: 'SMTP server password'
+    required: false
+  smtp_secure:
+    description: 'Use secure connection for SMTP'
+    required: false
+    default: 'false'
+  email_subject:
+    description: 'Subject line for email notifications'
+    required: false
+    default: 'GitHub Workflow Notification'
+
+  # Discord notification specific inputs
+  discord_webhook_url:
+    description: 'Discord webhook URL for sending notifications'
+    required: false
+
+  # Slack notification specific inputs
+  slack_webhook_url:
+    description: 'Slack webhook URL for sending notifications'
+    required: false
+
+  
+  # Telegram notification specific inputs
+  telegram_bot_token:
+    description: 'Telegram bot token for sending notifications'
+    required: false
+  telegram_chat_id:
+    description: 'Telegram chat ID for sending notifications'
+    required: false
+
+runs:
+  using: 'node20'
+  main: 'build/index.js'
